@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Daily Weight Traning</title>
+<!-- 부트스트랩 -->
+<!-- 합쳐지고 최소화된 최신 CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+<!-- 부가적인 테마 -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+<!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+<!-- 제이쿼리 -->
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="dailyJS.js" type="text/javascript" charset="utf-8"></script>
+<link rel="stylesheet" href="dailyCSS.css">
+</head>
+<body>
+    <h1></h1>
+    <table id="list">
+      <tr id="tableHead">
+        <th class="contents">내용</th>
+        <th class="title">구분</th>
+        <th class="writer">닉네임</th>
+        <th class="day">날짜</th>
+      </tr>
+      <tr>
+        <td class="contents">7/26 누가 스쿼트소리를 내었느냐?</td>
+        <td class="title">웨이트</td>
+        <td class="writer">커팅러</td>
+        <td class="day">2018.07.26</td>
+      </tr>
+      <tr>
+        <td class="contents">180726 ONZO 식단 일지</td>
+        <td class="title">영양일지</td>
+        <td class="writer">ONZO</td>
+        <td class="day">2018.07.26</td>
+      </tr>
+<!--       들어갈부분 -->
+    </table>
+
+  <br>
+  <form action="POST">
+    내용 : <input type="text" name="contents" size="75" placeholder="내용"/>&nbsp;&nbsp;
+    구분 : <input type="text" name="title"  size="20" placeholder="운동일지"/>&nbsp;&nbsp;
+    닉네임 : <input type="text" name="writer"  size="10" placeholder="닉네임"/>&nbsp;&nbsp;
+    <input type="submit" value="입력" />
+  </form>
+</body>
+</html>
